@@ -13,7 +13,11 @@ public class GameOverController : MonoBehaviour {
     {
         levelManager = GetComponent<LevelManager>();
         player = levelManager.player;
-        gameOverText.enabled = false;
+
+        if (gameOverText != null)
+        {
+            gameOverText.enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +26,11 @@ public class GameOverController : MonoBehaviour {
         {
             levelManager.isGameOver = true;
             player.gameObject.SetActive(false);
-            gameOverText.enabled = true;
+
+            if (gameOverText != null)
+            {
+                gameOverText.enabled = true;
+            }
             Debug.Log("player is dead");
         }
 	}

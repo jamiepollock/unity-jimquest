@@ -985,7 +985,10 @@ Prefab:
     - target: {fileID: 114204455789221914, guid: 1b4e358ac8fd71647ae1c56a76c304c5,
         type: 2}
       propertyPath: m_Text
-      value: Game Over!
+      value: 'Game Over!
+
+
+        Press R to play again'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b4e358ac8fd71647ae1c56a76c304c5, type: 2}
@@ -1147,6 +1150,14 @@ Prefab:
     - target: {fileID: 1418351084722188, guid: 1b4e358ac8fd71647ae1c56a76c304c5, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114204455789221914, guid: 1b4e358ac8fd71647ae1c56a76c304c5,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Level Complete!
+
+
+        Press R to play again'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b4e358ac8fd71647ae1c56a76c304c5, type: 2}

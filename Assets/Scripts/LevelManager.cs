@@ -10,17 +10,12 @@ public class LevelManager : MonoBehaviour {
 
     [HideInInspector] public bool isGameOver;
     [HideInInspector] public bool isLevelComplete;
-    
-    public Scene GetNextLevel()
+
+    private void Update()
     {
-
-        if (nextLevelBuildIndex > -1)
+        if (Input.GetKeyDown(KeyCode.Return) && isLevelComplete)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(nextLevelBuildIndex, LoadSceneMode.Additive);
-
-            UnityEngine.SceneManagement.SceneManager.GetSceneByBuildIndex(nextLevelBuildIndex);
+            SceneManager.LoadScene(nextLevelBuildIndex);
         }
-
-        return new Scene();
     }
 }

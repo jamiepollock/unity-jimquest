@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114159179830776526}
   - component: {fileID: 114630268927505576}
   - component: {fileID: 114919116198708502}
+  - component: {fileID: 114877948893157096}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -192,11 +193,11 @@ MonoBehaviour:
   jumpForce: 3
   jumpTime: 1
   jumpTimeCounter: 1
-  grounded: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
   stoppedJumping: 0
+  isGrounded: 0
   groundCheckRadius: 0.25
 --- !u!114 &114159179830776526
 MonoBehaviour:
@@ -238,6 +239,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompleteText: {fileID: 0}
+--- !u!114 &114877948893157096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611434988765616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ae848c67cbeea41b8ad61ee7eacced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114907260495410246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,7 +262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  isGrounded: 1
   isDead: 0
 --- !u!114 &114919116198708502
 MonoBehaviour:

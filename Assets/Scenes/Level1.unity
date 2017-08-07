@@ -684,6 +684,22 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114204455789221914, guid: 1b4e358ac8fd71647ae1c56a76c304c5,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Level Complete!
+
+
+        Press R to play again
+
+
+        Press Return to go to the next level'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114204455789221914, guid: 1b4e358ac8fd71647ae1c56a76c304c5,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b4e358ac8fd71647ae1c56a76c304c5, type: 2}
   m_IsPrefabParent: 0
@@ -742,6 +758,11 @@ Prefab:
       propertyPath: levelCompleteText
       value: 
       objectReference: {fileID: 993102446}
+    - target: {fileID: 114159179830776526, guid: 5e1f2882d54cfac43a156082b530abd4,
+        type: 2}
+      propertyPath: nextLevelBuildIndex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e1f2882d54cfac43a156082b530abd4, type: 2}
   m_IsPrefabParent: 0
