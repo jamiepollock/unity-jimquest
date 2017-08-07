@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ExitController : MonoBehaviour
-{
-    [HideInInspector] public bool isReached;
+public class KillPlayerController : MonoBehaviour {
 
     private PlayerController player;
 
@@ -14,17 +12,13 @@ public class ExitController : MonoBehaviour
         player = GetComponentInParent<LevelManager>().player;
     }
 
-    void Start()
-    {
-        isReached = false;
-    }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject == player.gameObject)
         {
-            isReached = true;
+            player.isDead = true;
+
         }
     }
-
 }
