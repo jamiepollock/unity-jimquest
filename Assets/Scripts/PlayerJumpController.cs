@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Script is a modified version of: http://answers.unity3d.com/questions/1187322/help-with-player-jumping-script-in-2d-platformer-c.html
+// Script is a modified version of: https://forum.unity3d.com/threads/mario-style-jumping.381906/
 // Added use of "Jump" button
 // Replaced empty transform with the use of the Component RigidBody2d position instead
 
