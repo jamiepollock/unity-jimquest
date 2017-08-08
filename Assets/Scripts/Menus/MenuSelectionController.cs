@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MenuSelectionController : MonoBehaviour
@@ -7,10 +8,15 @@ public class MenuSelectionController : MonoBehaviour
     private Button selectedObject;
     private bool buttonSelected;
     private LevelManager levelManager;
+    public EventSystem menusEventSystem;
 
     void Awake()
     {
-        levelManager = GetComponentInParent<LevelManager>();
+        if (menusEventSystem == null)
+        {
+            levelManager = GetComponentInParent<LevelManager>();
+            menusEventSystem = levelManager.menusEventSystem;
+        }
     }
 
     void Start()
@@ -28,7 +34,7 @@ public class MenuSelectionController : MonoBehaviour
     {
         if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
         {
-            levelManager.menusEventSystem.SetSelectedGameObject(selectedObject.gameObject);
+            menusEventSystem.SetSelectedGameObject(selectedObject.gameObject);
             buttonSelected = true;
         }
     }

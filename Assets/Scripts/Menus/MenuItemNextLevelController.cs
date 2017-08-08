@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuItemNextLevelController : MonoBehaviour {
-    private LevelManager levelManager;
     private Button button;
     private bool hasNextLevel;
+    private int nextSceneBuildIndex;
 
     void Awake()
     {
-        levelManager = GetComponentInParent<LevelManager>();
-
-        hasNextLevel = levelManager.nextLevelBuildIndex > -1;
+        nextSceneBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        hasNextLevel = nextSceneBuildIndex < SceneManager.sceneCountInBuildSettings;
 
         gameObject.SetActive(hasNextLevel);
     }
@@ -20,7 +20,7 @@ public class MenuItemNextLevelController : MonoBehaviour {
         if (hasNextLevel)
         {
             button = GetComponent<Button>();
-            button.onClick.AddListener(new UnityAction(() => levelManager.LoadNextLevel()));
+            button.onClick.AddListener(new UnityAction(() => SceneManager.LoadScene(nextSceneBuildIndex)));
         }
     }
 }
