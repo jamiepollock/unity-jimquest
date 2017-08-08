@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class PauseGameController : MonoBehaviour {
+    public GameObject pauseMenuPrefab;
+    private GameObject pauseMenu;
     private LevelManager levelManager;
-    public GameObject pauseMenu;
 
     void Awake()
     {
@@ -15,7 +12,9 @@ public class PauseGameController : MonoBehaviour {
 
     void Start()
     {
-        pauseMenu.SetActive(true);
+        pauseMenu = Instantiate(pauseMenuPrefab, levelManager.gameObject.transform);
+        pauseMenu.name = "Pause Menu";
+        pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame

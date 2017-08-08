@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4575716218458812}
   - component: {fileID: 212993794292129556}
   - component: {fileID: 61861484371211936}
-  - component: {fileID: 61625678345054436}
   - component: {fileID: 50429025407549828}
   m_Layer: 9
   m_Name: 'Platform: Top'
@@ -40,7 +39,6 @@ GameObject:
   - component: {fileID: 4511843472039386}
   - component: {fileID: 212472132896541926}
   - component: {fileID: 61268306153212406}
-  - component: {fileID: 61327766357061920}
   - component: {fileID: 50439896130164812}
   m_Layer: 9
   m_Name: 'Platform: Bottom'
@@ -169,56 +167,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
-  m_EdgeRadius: 0
---- !u!61 &61327766357061920
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569557582311712}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.05}
-  m_EdgeRadius: 0
---- !u!61 &61625678345054436
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476718050086210}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.05}
   m_EdgeRadius: 0
 --- !u!61 &61861484371211936
 BoxCollider2D:

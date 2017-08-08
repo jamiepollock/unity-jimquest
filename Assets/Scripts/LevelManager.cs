@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
+    public EventSystem menusEventSystem;
     public PlayerController player;
     public ExitController exit;
     public int nextLevelBuildIndex = -1;
@@ -12,9 +15,9 @@ public class LevelManager : MonoBehaviour {
     [HideInInspector] public bool isLevelComplete;
     [HideInInspector] public bool isPaused;
 
-    private void Update()
+    internal void LoadNextLevel()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && isLevelComplete)
+        if (nextLevelBuildIndex > -1)
         {
             SceneManager.LoadScene(nextLevelBuildIndex);
         }

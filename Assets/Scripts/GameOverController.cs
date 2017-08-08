@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameOverController : MonoBehaviour {
-    public Text gameOverText;
+    public GameObject gameOverMenuPrefab;
+    private GameObject gameOverMenu;
 
     private PlayerController player;
     private LevelManager levelManager;
@@ -12,12 +13,12 @@ public class GameOverController : MonoBehaviour {
     void Awake()
     {
         levelManager = GetComponent<LevelManager>();
-        player = levelManager.player;
+        gameOverMenu = Instantiate(gameOverMenuPrefab, levelManager.gameObject.transform);
+        gameOverMenu.name = "Game Over Menu";
 
-        if (gameOverText != null)
-        {
-            gameOverText.enabled = false;
-        }
+        player = levelManager.player;
+        
+        gameOverMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,10 +28,7 @@ public class GameOverController : MonoBehaviour {
             levelManager.isGameOver = true;
             player.gameObject.SetActive(false);
 
-            if (gameOverText != null)
-            {
-                gameOverText.enabled = true;
-            }
+            gameOverMenu.SetActive(true);
         }
 	}
 }

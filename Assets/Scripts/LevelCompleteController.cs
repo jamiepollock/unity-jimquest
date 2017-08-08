@@ -1,15 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class LevelCompleteController : MonoBehaviour {
-    public Text levelCompleteText;
+    public GameObject levelCompleteMenuPrefab;
+    private GameObject levelCompleteMenu;
     private LevelManager levelManager;
+
     void Awake()
     {
         levelManager = GetComponent<LevelManager>();
-        levelCompleteText.enabled = false;
+    }
+
+    void Start()
+    {
+        levelCompleteMenu = Instantiate(levelCompleteMenuPrefab, levelManager.gameObject.transform);
+        levelCompleteMenu.name = "Level Complete Menu";
+
+        levelCompleteMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,7 +25,8 @@ public class LevelCompleteController : MonoBehaviour {
         {
             levelManager.isLevelComplete = true;
             levelManager.player.gameObject.SetActive(false);
-            levelCompleteText.enabled = true;
+
+            levelCompleteMenu.SetActive(true);
         }
     }
 }
