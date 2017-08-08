@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour {
 
     [HideInInspector] public bool isGameOver;
     [HideInInspector] public bool isLevelComplete;
+    [HideInInspector] public bool isPaused;
 
     private void Update()
     {

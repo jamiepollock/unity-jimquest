@@ -41,6 +41,8 @@ GameObject:
   - component: {fileID: 114630268927505576}
   - component: {fileID: 114919116198708502}
   - component: {fileID: 114877948893157096}
+  - component: {fileID: 114081560862776100}
+  - component: {fileID: 114420071213984862}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -179,6 +181,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &114081560862776100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611434988765616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24a14e1e5fed274d94a29e3767cb97e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1852373821323728, guid: 3c35e771cbe1c9e4daa98ab5abaa458d, type: 2}
 --- !u!114 &114113664076110080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,6 +229,18 @@ MonoBehaviour:
   nextLevelBuildIndex: -1
   isGameOver: 0
   isLevelComplete: 0
+  isPaused: 0
+--- !u!114 &114420071213984862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611434988765616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201106f6a7d274d438feb8b984bcb4eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114457921656143666
 MonoBehaviour:
   m_ObjectHideFlags: 1

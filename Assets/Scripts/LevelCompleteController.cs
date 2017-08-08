@@ -20,7 +20,6 @@ public class LevelCompleteController : MonoBehaviour {
             levelManager.isLevelComplete = true;
             levelManager.player.gameObject.SetActive(false);
             levelCompleteText.enabled = true;
-            Debug.Log("Level Complete!");
         }
     }
 }

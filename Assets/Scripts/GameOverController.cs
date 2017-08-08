@@ -31,7 +31,6 @@ public class GameOverController : MonoBehaviour {
             {
                 gameOverText.enabled = true;
             }
-            Debug.Log("player is dead");
         }
 	}
 }
