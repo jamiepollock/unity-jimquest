@@ -20,7 +20,9 @@ public class PauseGameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        var canPause = (levelManager.isGameOver == false && levelManager.isLevelComplete == false);
+
+        if (Input.GetButtonDown(Buttons.Pause) && canPause)
         {
             TogglePause();
         }

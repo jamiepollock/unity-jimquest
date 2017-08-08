@@ -919,12 +919,27 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ExitGame
       objectReference: {fileID: 0}
+    - target: {fileID: 114741866887931710, guid: 3c35e771cbe1c9e4daa98ab5abaa458d,
+        type: 2}
+      propertyPath: selectedObject
+      value: 
+      objectReference: {fileID: 1112002688}
+    - target: {fileID: 114741866887931710, guid: 3c35e771cbe1c9e4daa98ab5abaa458d,
+        type: 2}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 1281584013}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c35e771cbe1c9e4daa98ab5abaa458d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1112002687 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1852373821323728, guid: 3c35e771cbe1c9e4daa98ab5abaa458d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1112002686}
+--- !u!1 &1112002688 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1790807821032356, guid: 3c35e771cbe1c9e4daa98ab5abaa458d,
     type: 2}
   m_PrefabInternal: {fileID: 1112002686}
 --- !u!1 &1281584011
