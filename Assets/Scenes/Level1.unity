@@ -566,6 +566,11 @@ Prefab:
       propertyPath: nextLevelBuildIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114013401066123320, guid: 5e1f2882d54cfac43a156082b530abd4,
+        type: 2}
+      propertyPath: levelName
+      value: Tiny Hurdle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e1f2882d54cfac43a156082b530abd4, type: 2}
   m_IsPrefabParent: 0

@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour {
     public EventSystem menusEventSystem;
     public PlayerController player;
     public ExitController exit;
-    //public int nextLevelBuildIndex = -1;
+    public string levelName;
 
     [HideInInspector] public bool isGameOver;
     [HideInInspector] public bool isLevelComplete;

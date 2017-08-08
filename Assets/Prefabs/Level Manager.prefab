@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114797246430950538}
   - component: {fileID: 114520174626867096}
   - component: {fileID: 114686717762236196}
+  - component: {fileID: 114751594031287990}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -195,7 +196,7 @@ MonoBehaviour:
   menusEventSystem: {fileID: 0}
   player: {fileID: 114835926034268432}
   exit: {fileID: 114544599837955828}
-  nextLevelBuildIndex: -1
+  levelName: 
   isGameOver: 0
   isLevelComplete: 0
   isPaused: 0
@@ -210,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9db12676f4834418fb0069e5c1269e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 3
+  jumpForce: 3.75
   jumpTime: 1
   jumpTimeCounter: 1
   whatIsGround:
@@ -279,6 +280,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201106f6a7d274d438feb8b984bcb4eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114751594031287990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334307874194256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b375d465e5dfdf34b935732cd4d9661e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUIPrefab: {fileID: 1136228979134012, guid: 4b2021af3b6d88a4bb4542afe2b3fa2e,
+    type: 2}
 --- !u!114 &114797246430950538
 MonoBehaviour:
   m_ObjectHideFlags: 1
