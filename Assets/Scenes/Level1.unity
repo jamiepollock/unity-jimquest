@@ -571,6 +571,7 @@ Prefab:
       propertyPath: levelName
       value: Tiny Hurdle
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 82409736997110146, guid: 5e1f2882d54cfac43a156082b530abd4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5e1f2882d54cfac43a156082b530abd4, type: 2}
   m_IsPrefabParent: 0

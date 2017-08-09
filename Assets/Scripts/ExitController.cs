@@ -8,9 +8,10 @@ public class ExitController : MonoBehaviour
     [HideInInspector] public bool isReached;
 
     private PlayerController player;
-
+    private AudioSource clip;
     private void Awake()
     {
+        clip = GetComponent<AudioSource>();
         player = GetComponentInParent<LevelManager>().player;
     }
 
@@ -24,6 +25,7 @@ public class ExitController : MonoBehaviour
         if (other.gameObject == player.gameObject)
         {
             isReached = true;
+            clip.Play();
         }
     }
 
